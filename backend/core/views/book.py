@@ -18,7 +18,7 @@ class BookViewSet(viewsets.ModelViewSet):
     }
     serializer_default = BookSerializer
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
         return self.serializer_classes.get(self.action, self.serializer_default)

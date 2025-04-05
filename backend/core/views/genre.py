@@ -18,7 +18,7 @@ class GenreViewSet(viewsets.ModelViewSet):
     }
     serializer_default = GenreSerializer
 
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
         return self.serializer_classes.get(self.action, self.serializer_default)
