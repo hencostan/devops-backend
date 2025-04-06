@@ -8,7 +8,6 @@ class AuthorReadOnlySerializer(serializers.Serializer):
     biography = serializers.CharField(read_only=True)
     first_name = serializers.CharField(read_only=True)
     last_name = serializers.CharField(read_only=True)
-    biography = serializers.CharField(read_only=True)
     profile_picture = serializers.ImageField(read_only=True)
 
 
