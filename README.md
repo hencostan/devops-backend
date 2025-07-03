@@ -56,6 +56,42 @@ Visit: [http://localhost:8000](http://localhost:8000)
 
 ---
 
+## Database inclusion
+Criar o arquivo venv
+---
+python -m venv venv 
+---
+pip install -r requirements.txt 
+----
+----
+source venv/bin/activate 
+cd devops-backend-develop/
+-----
+
+Criar no MySQL Workbench um repositorio mysql.
+Com senha:
+
+root
+---
+Depois colocar o comando:
+
+create database smysql
+----
+execute
+
+Depois va na aba SCHEMAS e execute novamente 
+
+
+
+-----
+python manage.py migrate
+-----
+git config --global user.name ****
+------
+it config --global user.email ****
+-----
+
+
 ## 📚 References
 
 - [Django Documentation](https://docs.djangoproject.com/)
