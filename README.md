@@ -63,28 +63,30 @@ Visit: [http://localhost:8000](http://localhost:8000)
 
 '''bash
 python -m venv venv 
-'''
-```bash
+
 pip install -r requirements.txt 
-'''
-```bash
+
 source venv/bin/activate 
-'''
-```bash
+
 cd devops-backend-develop/
 '''
 
 Criar no MySQL Workbench um repositorio mysql.
 Com senha:
-------
-```bash
+---
+
+'''bash
 root
 '''
+
+
 Depois colocar o comando:
----
-```bash
+----
+
+``bash
 create database smysql
 '''
+
 execute
 
 Depois va na aba SCHEMAS e execute novamente 
@@ -92,12 +94,15 @@ Depois va na aba SCHEMAS e execute novamente
 
 Apos isso execute o comando migrate
 -----
-```bash
+
+``bash
 python manage.py migrate
 '''
+
 Lembrando claro de estar conectado ao github
 ----
-```bash
+
+``bash
 git config --global user.name ****
 it config --global user.email ****
 '''
